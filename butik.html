@@ -1,0 +1,982 @@
+<promhtml>
+    <style>
+       @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic");
+.body {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.head-bg {
+  position: relative;
+  overflow: hidden;
+  height: 690px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+.backround-work {
+  position: relative;
+  overflow: hidden; }
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: #e36159 !important; } }
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: #e36159 !important; } }
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color; }
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #e36180 !important;
+  background-color: #e36180 !important;
+  color: white; }
+
+.header-svg {
+  width: 15px;
+  fill: #fff; }
+
+.header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer; }
+  .header-button-img {
+    margin-left: 5px; }
+  .header-button:hover .header-button-img {
+    margin-left: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-logo {
+  width: 40%;
+  margin-top: 50px; }
+
+.header-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 606px;
+  height: 317px;
+  border-radius: 15px;
+  background-color: #e36159 !important;
+  padding: 70px; }
+  .header-cont-title {
+      line-height: 1em;
+    color: #ffffff !important;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 900; }
+  .header-cont-text {
+    color: #ffffff !important;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px; }
+
+.header-bg {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3; }
+
+.kross-bg {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 52%;
+  top: 38%; }
+
+.kross-bg img {
+  width: 100%; }
+
+.hed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%; }
+
+.header-two {
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.head-btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff !important;
+  position: relative; }
+
+@media (max-width: 1100px) {
+  .header-two {
+    margin-right: -73px; }
+  .kross-bg {
+    top: 44%; } }
+
+@media (max-width: 948px) {
+  .header-two {
+    margin-right: -73px; }
+  .header-cont {
+    width: 495px; }
+  .kross-bg {
+    top: 53%; } }
+
+@media (max-width: 826px) {
+  .hed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-two {
+    margin-right: 0; }
+  .kross-bg {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .header-cont-title {
+    line-height: 1em;
+    font-size: 22px; }
+  .header-cont-text {
+    font-size: 14px; } }
+
+@media (max-width: 542px) {
+  .header-cont {
+    width: 401px; } }
+
+@media (max-width: 436px) {
+  .header-cont {
+    width: 354px;
+    padding: 40px; } }
+
+@media (max-width: 384px) {
+  .header-cont {
+    width: 315px; } }
+
+@media (max-width: 358px) {
+  .header-cont {
+    width: 286px; } }
+
+.color-text {
+  color: #e36159 !important;
+  font-family: "Montserrat";
+  font-weight: 700; }
+
+.krapka {
+  display: inline-block;
+  color: #e36159 !important; }
+
+.priem-title {
+    line-height: 1em;
+  color: #000000 !important;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 100px; }
+
+.priem-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .priem-wrap_item {
+    width: 160px;
+    text-align: center;
+    margin: 15px; }
+    .priem-wrap_item-img {
+      height: 60px; }
+      .priem-wrap_item-img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+    .priem-wrap_item-text {
+      font-family: "Montserrat";
+      font-weight: 400;
+      color: #000000 !important;
+      font-size: 16px; }
+
+@media (max-width: 576px) {
+  .priem-title {
+    line-height: 1em;
+    font-size: 22px; } }
+
+.partner {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .partner-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .partner-wrap_block-title {
+        line-height: 1em;
+      color: #000000 !important;
+      font-family: "Montserrat";
+      font-size: 30px;
+      font-weight: bold;
+      width: 258px; }
+    .partner-wrap_block-text {
+      color: #000000 !important;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px; }
+    .partner-wrap_block-part {
+      width: 50%;
+      min-width: 408px;
+      margin: 10px;
+      height: 311px;
+      -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+      background-color: #ffffff !important;
+      padding: 38px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .partner-wrap_block-part:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+    .partner-wrap_block-second {
+      width: 50%;
+      margin: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 20px; }
+  .partner-btn {
+    text-decoration: none;
+    width: 205px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #e36159 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px; }
+
+@media (max-width: 992px) {
+  .partner-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .partner-wrap_block-part {
+    width: 70%;
+    min-width: 240px;
+    margin: 10px;
+    height: 121%;
+    height: 350px; }
+  .partner-wrap_block-second {
+    width: 70%;
+    min-width: 240px;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media (max-width: 576px) {
+  .partner-wrap_block-title {
+    line-height: 1em;
+    font-size: 22px;
+    width: 100%; }
+  .partner-wrap_block-text {
+    font-size: 14px; }
+  .partner-btn {
+    width: 167px; }
+  .partner-wrap_block-second {
+    font-size: 14px; } }
+
+.work-otstup {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.work-bg {
+  position: absolute;
+  z-index: 0;
+  height: 100%; }
+
+.work-bg img {
+  width: auto;
+  height: 100%; }
+
+.work-title {
+    line-height: 1em;
+  color: #000000 !important;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold; }
+
+.work-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .work-wrap__item {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 240px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px; }
+    .work-wrap__item:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 15px; }
+  .work-wrap-number {
+    color: #e36159 !important;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 900; }
+
+.etap-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .etap-wrap_one {
+    width: 50%;
+    padding-top: 40px; }
+    .etap-wrap_one-title {
+        line-height: 1em;
+      color: #000000 !important;
+      font-family: "Montserrat";
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 20px; }
+    .etap-wrap_one-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 207px; }
+      .etap-wrap_one-text-itm {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+  .etap-wrap_two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 35px;
+    padding: 40px;
+    width: 50%;
+    min-height: 445px;
+    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    background-color: #ffffff !important; }
+    .etap-wrap_two:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .etap-wrap_two-title {
+        line-height: 1em;
+      color: #000000 !important;
+      font-family: "Montserrat";
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 20px; }
+    .etap-wrap_two-text-itm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 10px; }
+    .etap-wrap_two-foot {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .etap-wrap_two-foot-number {
+        margin: 10px;
+        color: #000000 !important;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 700; }
+
+.etap-number {
+  margin-right: 10px;
+  color: #e36159 !important;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 900; }
+
+.etap-num-text {
+  color: #000000 !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400; }
+
+.next {
+  margin-left: 20px; }
+
+.line {
+  border-bottom: 1px solid #e36159 !important;
+  width: 16px;
+  height: 2px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px; }
+
+@media (max-width: 992px) {
+  .etap-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .etap-wrap_one {
+      width: 70%;
+      min-width: 240px; }
+    .etap-wrap_two {
+      width: 70%;
+      min-width: 240px; } }
+
+@media (max-width: 576px) {
+  .etap-wrap_two-title {
+    line-height: 1em;
+    font-size: 22px; }
+  .etap-wrap_two-text {
+    font-size: 14px; }
+  .etap-num-text {
+    font-size: 14px; }
+  .etap-wrap_one-title {
+    line-height: 1em;
+    font-size: 22px; } }
+
+.kompens-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-width: 240px;
+  margin: 20px auto;
+  background: #e36159 !important;
+  padding: 20px;
+  border-radius: 15px; }
+
+.kompens-img {
+  margin-right: 15px; }
+
+.kompens-text {
+  color: #ffffff !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; }
+
+@media (max-width: 576px) {
+  .kompens-text {
+    font-size: 14px; } }
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+
+    </style>
+<div class="body">
+
+<header class="header">
+    <div class="container head-bg">
+           <div class="header-bg">
+               <img src="https://b.radikal.ru/b36/1912/53/099693f3cfcf.png
+               " alt="">
+           </div>
+        <div class="container-wrap hed">
+            <div class="header-one">
+                <div class="header-logo">
+                    <div class="header-logo-img"> <img src="https://b.radikal.ru/b29/1912/25/efd2dc42ac6f.png" alt=""></div>
+
+                    
+                    <div class="kross-bg">
+                            <img src="https://a.radikal.ru/a15/1912/dc/12c73f157be8.png" alt="">
+                        </div>
+                </div>
+            </div>
+            
+            <div class="header-two">
+                <div class="header-cont">
+                    <div class="header-cont-title">
+                            Дропшиппинг обуви
+                    </div>
+
+                    <div class="header-cont-text">
+                            Мы прямой поставщик обуви по дропшиппингу, так же продаем обувь оптом из натуральной кожи украинского   производства
+                    </div>
+
+                    <span class="header-button">
+                    <a href="https://butikobuff.com.ua/cp80538-dropshipping-obuvi.html">
+                        <div class="head-btn" >Выбрать обувь</div>
+                        <div class="header-button-img">
+                                <svg class="header-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                        </div>
+                    </a>
+                </span>
+
+                
+                </div>
+            </div>
+            
+            
+
+            
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section priem">
+        <div class="container">
+            <div class="container-wrap">
+                <div class="priem-title">
+                        Наши<br>
+                        преимущества <div class="krapka">.</div>
+                </div>
+
+                <div class="priem-wrap">
+                    <div class="priem-wrap_item">
+                        <div class="priem-wrap_item-img">
+                            <img src="https://a.radikal.ru/a20/1912/70/4fcd0c13ddd4.png" alt="">
+                        </div>
+
+                        <div class="priem-wrap_item-text">
+                            <span class="color-text"> 10000</span> пар обуви в наличии на складе
+                        </div>
+                    </div>
+
+                     <div class="priem-wrap_item">
+                        <div class="priem-wrap_item-img">
+                            <img src="https://d.radikal.ru/d08/1912/28/f70e104bad5e.png" alt="">
+                        </div>
+
+                        <div class="priem-wrap_item-text">
+                                Отправка в <span class="color-text">день заказа</span>
+                        </div>
+                    </div>
+
+                     <div class="priem-wrap_item">
+                        <div class="priem-wrap_item-img">
+                            <img src="https://a.radikal.ru/a35/1912/eb/b61dec88c462.png" alt="">
+                        </div>
+
+                        <div class="priem-wrap_item-text">
+                                <span class="color-text"> Цены дешевше</span>, чем у конкурентов
+                        </div>
+                    </div>
+
+                     <div class="priem-wrap_item">
+                        <div class="priem-wrap_item-img">
+                            <img src="https://d.radikal.ru/d16/1912/46/2c62feb4eaaa.png" alt="">
+                        </div>
+
+                        <div class="priem-wrap_item-text">
+                              <span class="color-text">  YML/XLS</span> файл выгрузки
+                        </div>
+                    </div>
+
+                     <div class="priem-wrap_item">
+                        <div class="priem-wrap_item-img">
+                            <img src="https://b.radikal.ru/b19/1912/38/279a40fc4757.png" alt="">
+                        </div>
+
+                        <div class="priem-wrap_item-text">
+                               <span class="color-text"> Бесплатная</span> консультация
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section partner">
+        <div class="container">
+            <div class="container-wrap">
+                <div class="partner-wrap">
+                    <div class="partner-wrap_block-part">
+                            <div class="partner-wrap_block-title">
+                                    Станьте нашим
+                                    партнером<div class="krapka">.</div>
+                            </div>
+                            <div class="partner-wrap_block-text">
+                                    Заполните простую анкету и мы свяжемся с вами в кратчайшие сроки и расскажем вам все условия продаж по дропшиппингу
+                            </div>
+
+                            <a href="https://obuff24.com.ua/pub/form/8_poluchyt_konsultatsyyu_spetsyalysta/xn02kj/" class="partner-btn hvr-back-pulse"><span class="button">Стать партнером</span></a>
+                    </div>
+
+
+                    <div class="partner-wrap_block-second">
+                            Программа DropShipping подходит для тех, кто давно хотел заняться собственным бизнесом и зарабатывать деньги на продажах. Этот способ, который популярен во всем мире, в том числе и в Украине. TM Obuff прямой поставщик для 250 интернет магазинов в Украине.
+                            Сотрудничаем с интернет магазинами, организаторами СП и владельцами страничек в социальных сетях а также группами в ВК, которые продают мужскую, женскую и подростковую, детскую обувь. Работаем по дропшиппинг с 2014 года. Присоединяйтесь и зарабатывайте!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section work">
+        <div class="container backround-work">
+
+                <div class="work-bg">
+                        <img src="img/Слой_15.png" alt="">
+                    </div>
+
+            <div class="container-wrap">
+                <div class="work-title">
+                        Как начать работать<br>
+                        с нами <span class="krapka">?</span>  
+                </div>
+
+                <div class="work-wrap">
+                    <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            01
+                        </div>
+
+                        <div class="work-wrap-text">
+                            Оставляете Ваш номер телефона
+                        </div>
+                    </div>
+
+                    <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            02
+                        </div>
+
+                        <div class="work-wrap-text">
+                            Наш менеджер связывается с вами
+                        </div>
+                    </div>
+
+                    <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            03
+                        </div>
+
+                        <div class="work-wrap-text">
+                                Загружаете фото товара на Ваш ресурс
+                        </div>
+                    </div>
+
+                     <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            04
+                        </div>
+
+                        <div class="work-wrap-text">
+                            Получаете первый  заказ и передаете нам
+                        </div>
+                    </div>
+
+                    <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            05
+                        </div>
+
+                        <div class="work-wrap-text">
+                            Мы отправляем товар клиенту
+                        </div>
+                    </div>
+
+                    <div class="work-wrap__item">
+                        <div class="work-wrap-number">
+                            06
+                        </div>
+
+                        <div class="work-wrap-text">
+                                Получете Вашу прибыль
+                        </div>
+                    </div>
+
+
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section etap">
+        <div class="container">
+            <div class="container-wrap">
+            <div class="etap-wrap">
+                    <div class="etap-wrap_one">
+                            <div class="etap-wrap_one-title">
+                                    Этапы<br>
+                                    развития<div class="krapka">.</div>
+                            </div>
+        
+                            <div class="etap-wrap_one-text">
+                                <div class="etap-wrap_one-text-itm">
+                                    <div class="etap-number">2011</div>
+                                    <div class="etap-num-text">
+                                            Начали торговлю с небольшого места на рынке
+                                    </div>
+                                 </div>
+                        
+                                <div class="next">
+                                    <img src="https://a.radikal.ru/a22/1912/b1/0a17eacfa458.png" alt="">
+                                </div>
+        
+                                <div class="etap-wrap_one-text-itm">
+                                    <div class="etap-number">2014</div>
+                                    <div class="etap-num-text">
+                                            Создали свой сайт и начали продавать в инетрнете
+                                    </div>
+                                 </div>
+        
+                                 <div class="next">
+                                    <img src="https://a.radikal.ru/a22/1912/b1/0a17eacfa458.png" alt="">
+                                 </div>
+        
+                                 <div class="etap-wrap_one-text-itm">
+                                    <div class="etap-number">2016</div>
+                                    <div class="etap-num-text">
+                                            Добавили вид торговли дропшиппинг 
+                                    </div>
+                                 </div>
+        
+                        </div>
+                        </div>
+        
+        
+                        <div class="etap-wrap_two">
+                            <div class="etap-wrap_two-title">
+                                    Почему<br>
+                                    мы<span class="krapka">?</span>
+                            </div>
+                            
+                            <div class="etap-wrap_two-text">
+                                <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            Надежный поставщик
+                                    </div>
+                                </div>
+        
+                                <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            10000 пар обуви в наличии
+                                    </div>
+                                </div>
+        
+                                <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            Выгрузка для пром юа
+                                    </div>
+                                </div>
+        
+                                
+                                <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            Отправка в день заказа - 7 дней в неделю
+                                    </div>
+                                </div>
+        
+                                <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            Отправка наложенным платежем
+                                    </div>
+                                </div>
+        
+                                   <div class="etap-wrap_two-text-itm">
+                                    <div class="line"></div>
+                                    <div class="etap-wrap_two-text">
+                                            Быстрые выплаты
+                                    </div>
+                                </div>
+        
+        
+                                
+                            </div>
+        
+                            <div class="etap-wrap_two-foot">
+                                    <a href="tel: +380970855855" class="partner-btn hvr-back-pulse"><span class="button">Позвонить нам</span></a>
+                                    <div class="etap-wrap_two-foot-number">
+                                            (097) 085 58 55
+                                    </div>
+                            </div>
+        
+                        </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section kompens">
+        <div class="container">
+            <div class="container-wrap">
+                <div class="kompens-wrap">
+                    <div class="kompens-img">
+                        <img src="https://b.radikal.ru/b02/1912/7b/5b9c255b3161.png" alt="">
+                    </div>
+
+                    <div class="kompens-text">
+                            Если товара нет в наличии мы выплачиваем 100 грн компенсации, таким образом вы или получаете обувь или зарабатываете деньги
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="container-wrap">
+                <div class="footer-wrap">
+                    <img src="https://b.radikal.ru/b29/1912/25/efd2dc42ac6f.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</main> 
+
+    
+</div>
+</promhtml>
